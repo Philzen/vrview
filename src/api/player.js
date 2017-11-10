@@ -81,6 +81,7 @@ Player.prototype.addHotspot = function(hotspotId, params) {
     yaw: params.yaw,
     radius: params.radius,
     distance: params.distance,
+    color: params.color,
     id: hotspotId
   };
   this.sender.send({type: Message.ADD_HOTSPOT, data: data});
